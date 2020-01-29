@@ -82,6 +82,21 @@
           }
         }
       }
-    }},
+    },
+    "components-library": {
+      "root": "custom_lib",
+      "sourceRoot": "custom_lib/src",
+      "projectType": "library",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "custom_lib/tsconfig.lib.json",
+            "project": "custom_lib/ng-package.json"
+          }
+        }
+      }
+    }
+  },
   "defaultProject": "HelloFoo"
 }
